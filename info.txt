@@ -1,0 +1,32 @@
+1. Público (sin login)
+-Página principal del torneo
+-Información (reglas, fechas, premios)
+2. Usuarios
+-Registro / login
+-Perfil básico
+3. Equipos
+-Crear equipo
+-Unirse a equipo
+-Ver miembros
+4. Torneos
+-Lista de torneos
+-Inscripción a torneo (equipo)
+-Brackets / partidas
+5. Partida (nivel avanzado)
+-Marcador en vivo
+-Historial
+-Picks & bans
+
+
+
+El proyecto es una aplicación web para gestionar un torneo de Brawl Stars. La idea es construir una plataforma tipo esports donde habrá una página pública con información del torneo, reglamento, noticias y secciones informativas, y más adelante un sistema completo de usuarios, equipos, inscripción a torneos, gestión de partidos, marcadores, historial y funcionalidades avanzadas como picks y bans.
+
+El stack tecnológico que estás usando es Laravel como backend principal, React como frontend, Inertia.js como puente entre ambos para evitar tener que construir una API REST completa, Vite como herramienta de build del frontend, MySQL como base de datos (gestionada a través de XAMPP), Composer para la gestión de dependencias de PHP, Node.js y npm para las dependencias del frontend, y Breeze de Laravel para el sistema de autenticación inicial (login y registro). También estás usando Tailwind CSS como base de estilos.
+
+El proyecto se está construyendo con una arquitectura moderna de tipo monolito híbrido, donde Laravel maneja la lógica del servidor, las rutas, la base de datos y la autenticación, mientras que React se encarga de la interfaz de usuario. Inertia conecta ambos mundos permitiendo que las páginas React se comporten como si fueran vistas de Laravel.
+
+Hasta ahora ya tienes el entorno completamente configurado, con Laravel instalado correctamente, PHP configurado con las extensiones necesarias, MySQL funcionando con XAMPP, y Breeze instalado con React. También se han resuelto varios problemas de compatibilidad con Vite, Node y dependencias.
+
+En cuanto a la estructura del proyecto, has empezado a redefinir las rutas para eliminar la página por defecto de Laravel y reemplazarla por páginas públicas personalizadas: Home, Rules y News. También has decidido que la Home será una landing page con varias secciones (quiénes somos, cómo competir, noticias, preguntas frecuentes y contacto), mientras que noticias pasarán a ser una sección dentro de la Home en lugar de una página independiente. Además se ha planteado un layout global con navbar, footer y un sistema de consentimiento de cookies.
+
+Actualmente estás en la fase de frontend base del proyecto. Has creado la estructura inicial del layout del torneo, incluyendo el layout principal, navbar, footer y cookie consent, así como la primera versión de la Home con secciones estáticas. El siguiente paso inmediato es ver la aplicación funcionando en local con Laravel y Vite ejecutándose, y a partir de ahí empezar a mejorar el diseño de la Home para que tenga apariencia de plataforma de esports antes de avanzar al backend de equipos y lógica del torneo.

@@ -2,7 +2,7 @@ import { Link } from "@inertiajs/react";
 
 export default function Navbar() {
     return (
-        <nav className="flex justify-between p-4 border-b">
+        <nav className=" fixed top-0 left-0 right-0 flex justify-between p-4 border-b">
             <div className="font-bold">
                 Brawl Tournament
             </div>

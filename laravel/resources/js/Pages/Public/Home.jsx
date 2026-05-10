@@ -1,22 +1,22 @@
 import TournamentLayout from "@/Layouts/TournamentLayout";
+import Hero from "@/Components/Hero";
+import MouseGlow from "@/Components/MouseGlow";
 
 export default function Home() {
     return (
-        <div className="space-y-24 p-10">
+        <div className="">
+            <MouseGlow />
 
-            {/* HERO */}
-            <section className="text-center">
-                <h1 className="text-4xl font-bold">
-                    Brawl Stars Tournament
-                </h1>
-                <p>El torneo competitivo definitivo</p>
-            </section>
+                <section> 
+                    <Hero />   
+                </section>
 
             {/* QUIENES SOMOS */}
-            <section>
-                <h2 className="text-2xl font-bold">Quiénes somos</h2>
-                <p>Somos una comunidad dedicada a esports de Brawl Stars.</p>
-            </section>
+                <section>
+                    <h2 className="text-2xl font-bold z-0">Quiénes somos</h2>
+                    <p>Somos una comunidad dedicada a esports de Brawl Stars.</p>
+                </section>
+            
 
             {/* COMO COMPETIR */}
             <section>
@@ -41,6 +41,7 @@ export default function Home() {
                 <h2 className="text-2xl font-bold">Contacto</h2>
                 <p>Contáctanos para soporte o colaboración.</p>
             </section>
+            
 
         </div>
     );
